@@ -1,4 +1,4 @@
-# Loft-Helper
+# Loft Helper App
 Flutter Project to win LoftTech Hackathon
 
 ## Web deploy

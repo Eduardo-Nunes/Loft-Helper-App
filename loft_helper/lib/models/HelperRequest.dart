@@ -8,6 +8,8 @@ class HelperRequest {
   var garage = 0;
   var addres = "";
   var number = "";
+  var email = "";
+  var reset = false;
 
   HelperRequest(this.userName);
 }

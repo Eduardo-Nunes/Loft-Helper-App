@@ -1,9 +1,12 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:loft_helper/models/HelperRequest.dart';
 import 'package:loft_helper/styles/TextStyles.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../CONSTS.dart';
+import 'HelperContainer.dart';
+import 'MockedResultPage.dart';
 
 class RequestPlacesPage extends StatefulWidget {
   final HelperRequest request;
@@ -17,6 +20,8 @@ class RequestPlacesPage extends StatefulWidget {
 class _RequestPlacesPage extends State<RequestPlacesPage> {
   @override
   Widget build(BuildContext context) {
+    awaitResult();
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
@@ -45,5 +50,20 @@ class _RequestPlacesPage extends State<RequestPlacesPage> {
         )
       ],
     );
+  }
+
+  awaitResult() async {
+    Future.delayed(const Duration(milliseconds: 3000), () {
+      goToResult();
+    });
+  }
+
+
+  goToResult() {
+    Navigator.of(context)
+        .push(new MaterialPageRoute(builder: (BuildContext context) {
+      return new HelperContainer(
+          innerChild: MockedResultPage(request: widget.request), image: "");
+    }));
   }
 }

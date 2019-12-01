@@ -70,7 +70,10 @@ class _BucketPage extends State<BucketPage> {
   }
 
   goToLazerFlow(String bucket) {
-    widget.request.bucket = bucket;
+    setState(() {
+      widget.request.bucket = bucket;
+    });
+
     Navigator.of(context)
         .push(new MaterialPageRoute(builder: (BuildContext context) {
       return new HelperContainer(

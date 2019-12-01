@@ -23,3 +23,7 @@ const CONTINUAR = "continuar";
 const GARAGE_TITLE = "Garagem, quantas";
 const GARAGE_SUBTITLE = "vagas você precisa?";
 const ZERO_GARAGE = "nenhuma";
+const MOBILIA_TITLE = "O apartamento";
+const MOBILIA_SUBTITLE = "precisa estar mobiliado?";
+const PLACES_TITLE = "Estamos carregando";
+const PLACES_SUBTITLE = "as melhores oportunidades para você";

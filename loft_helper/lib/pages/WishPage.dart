@@ -64,7 +64,9 @@ class _WishPage extends State<WishPage> {
   }
 
   goToShopFlow() {
-    widget.request.wish = "SHOP";
+    setState(() {
+      widget.request.wish = "SHOP";
+    });
     Navigator.of(context)
         .push(new MaterialPageRoute(builder: (BuildContext context) {
       return new HelperContainer(

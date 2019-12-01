@@ -11,7 +11,7 @@ const IMAGE_11 = "assets/images/image_11.png";
 const IMAGE_12 = "assets/images/imagem12.png";
 const IMAGE_13 = "assets/images/image_13.png";
 const IMAGE_14 = "assets/images/image_14.png";
-const images = [IMAGE_4, IMAGE_5];
+const images = [IMAGE_4, IMAGE_5, IMAGE_7, IMAGE_8, IMAGE_11, IMAGE_12, IMAGE_13, IMAGE_14];
 
 final appLogoImage = Image.asset(
   APP_LOGO_PATH,

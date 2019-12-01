@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:loft_helper/input/SubmitText.dart';
 import 'package:loft_helper/models/HelperRequest.dart';
 import 'package:loft_helper/styles/TextStyles.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../CONSTS.dart';
 
-class RequestPlacesPage extends StatefulWidget {
+class EmailPage extends StatefulWidget {
+
   final HelperRequest request;
 
-  const RequestPlacesPage({Key key, this.request}) : super(key: key);
+  const EmailPage({Key key, this.request}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _RequestPlacesPage();
+  State<StatefulWidget> createState() => _EmailPage();
 }
 
-class _RequestPlacesPage extends State<RequestPlacesPage> {
+class _EmailPage extends State<EmailPage> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,7 +27,7 @@ class _RequestPlacesPage extends State<RequestPlacesPage> {
             padding: new EdgeInsets.only(
                 top: 24.0, bottom: 12.0, left: 24.0, right: 24.0),
             child: Text(
-              PLACES_TITLE,
+              "Para finalizar",
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
               style: titleStyle,
@@ -35,15 +36,22 @@ class _RequestPlacesPage extends State<RequestPlacesPage> {
         Padding(
             padding: new EdgeInsets.only(bottom: 12.0, left: 24.0, right: 24.0),
             child: Text(
-              PLACES_SUBTITLE,
+              "compartilhe comigo o seu e-mail",
               textAlign: TextAlign.center,
               style: subTitleStyle,
             )),
         Container(
-          padding: new EdgeInsets.only(top: 48.0, bottom: 12.0),
-          child: CircularProgressIndicator(),
-        )
+            width: 350,
+            padding: new EdgeInsets.only(top: 48.0, bottom: 12.0),
+            child: SubmitText(
+                inputName: "numero",
+                submitLabel: ENVIAR,
+                hintLabel: "Digite o seu e-mail...",
+                onFieldSubmittedCallback: (String text) {
+
+                }))
       ],
     );
   }
+
 }

@@ -7,6 +7,7 @@ import 'package:loft_helper/styles/Images.dart';
 import 'package:loft_helper/styles/TextStyles.dart';
 
 import '../CONSTS.dart';
+import 'WhereIsPage.dart';
 
 const HORIZONTAL_PADDING = 90.0;
 
@@ -65,7 +66,7 @@ class _WishPage extends State<WishPage> {
 
   goToShopFlow() {
     setState(() {
-      widget.request.wish = "SHOP";
+      widget.request.wish = SHOP;
     });
     Navigator.of(context)
         .push(new MaterialPageRoute(builder: (BuildContext context) {
@@ -74,7 +75,16 @@ class _WishPage extends State<WishPage> {
     }));
   }
 
-  goToSellFlow() {}
+  goToSellFlow() {
+    setState(() {
+      widget.request.wish = SELL;
+    });
+    Navigator.of(context)
+        .push(new MaterialPageRoute(builder: (BuildContext context) {
+      return new HelperContainer(
+          innerChild: WhereIsPage(request: widget.request), image: getRandomImage());
+    }));
+  }
 
   goToTradeFlow() {}
 }

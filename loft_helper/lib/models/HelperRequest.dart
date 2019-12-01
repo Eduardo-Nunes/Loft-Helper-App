@@ -6,6 +6,8 @@ class HelperRequest {
   var mobilia;
   var rooms = 0;
   var garage = 0;
+  var addres = "";
+  var number = "";
 
   HelperRequest(this.userName);
 }

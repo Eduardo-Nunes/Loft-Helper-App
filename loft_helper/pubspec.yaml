@@ -26,6 +26,7 @@ dependencies:
   firebase_core: ^0.4.2+1
   cloud_firestore: ^0.12.10+2
   animated_splash: ^1.0.0
+  dart_random_choice: ^0.0.2
 
 dev_dependencies:
   flutter_test:
@@ -38,8 +39,7 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   assets:
-    - assets/images/logo_loft.png
-    - assets/images/logo_lofthelper.png
+    - assets/images/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

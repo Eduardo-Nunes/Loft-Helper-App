@@ -1,8 +1,7 @@
 import 'package:animated_splash/animated_splash.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
-import 'pages/welcome_page.dart';
+import 'pages/WelcomePage.dart';
 import 'styles/Colors.dart';
 import 'styles/Dimens.dart';
 import 'styles/Images.dart';
@@ -28,7 +27,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.deepOrange,
           primaryColor: primaryColor),
       home: AnimatedSplash(
-        imagePath: APP_LOGO_PATH,
+        imagePath: SPLASH_LOGO_PATH,
         home: Scaffold(
           backgroundColor: backgroundColor,
           body: SingleChildScrollView(

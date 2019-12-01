@@ -45,16 +45,12 @@ class _SubmitText extends State<SubmitText> {
         }
         return null;
       },
-      onFieldSubmitted: widget.onFieldSubmittedCallback,
       textCapitalization: TextCapitalization.words,
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
         contentPadding: new EdgeInsets.symmetric(vertical: 0, horizontal: 16),
         labelStyle: TextStyle(fontSize: 16, color: mediumGrey),
         hintStyle: TextStyle(color: hintColor),
-        hoverColor: white,
-        focusColor: white,
-        fillColor: white,
         hintText: widget.hintLabel,
         border: OutlineInputBorder(),
       ),

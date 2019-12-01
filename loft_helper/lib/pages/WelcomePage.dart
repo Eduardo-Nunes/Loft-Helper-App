@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:loft_helper/input/SubmitText.dart';
+import 'package:loft_helper/pages/HelperContainer.dart';
+import 'package:loft_helper/pages/UserCounterPage.dart';
+import 'package:loft_helper/styles/Colors.dart';
 import 'package:loft_helper/styles/Dimens.dart';
 import 'package:loft_helper/styles/Images.dart';
 import 'package:loft_helper/styles/TextStyles.dart';
@@ -25,7 +28,7 @@ class WelcomePage extends StatelessWidget {
             ),
             Padding(
                 padding:
-                    new EdgeInsets.symmetric(vertical: 24.0, horizontal: 48.0),
+                new EdgeInsets.symmetric(vertical: 24.0, horizontal: 48.0),
                 child: Text(
                   WELCOME_TITLE,
                   textAlign: TextAlign.center,
@@ -40,22 +43,21 @@ class WelcomePage extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: messageStyle,
                 )),
-            Padding(
-              padding: new EdgeInsets.symmetric(horizontal: 48.0, vertical: 24),
+            Container(
+              margin: new EdgeInsets.symmetric(horizontal: 48.0, vertical: 24),
+              color: white,
               child: new SubmitText(
                   inputName: USER_NAME_HINT,
                   submitLabel: USER_NAME_SUBMIT_LABEL,
                   hintLabel: USER_NAME_HINT,
                   onFieldSubmittedCallback: (String text) {
-                    return showDialog(
-                      context: context,
-                      builder: (context) {
-                        return AlertDialog(
-                          // Retrieve the text the that user has entered by using the
-                          // TextEditingController.
-                          content: Text(text),
-                        );
-                      },
+                    Navigator.of(context).push(
+                        new MaterialPageRoute(builder: (BuildContext context) {
+                          return new HelperContainer(
+                            innerChild: new UserCounterPage(title: text),
+                            image: IMAGE_5,
+                          );
+                        })
                     );
                   }),
             )

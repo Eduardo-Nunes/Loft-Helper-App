@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loft_helper/input/SubmitText.dart';
+import 'package:loft_helper/models/HelperRequest.dart';
 import 'package:loft_helper/pages/HelperContainer.dart';
 import 'package:loft_helper/pages/UserCounterPage.dart';
 import 'package:loft_helper/pages/WishPage.dart';
@@ -29,7 +30,7 @@ class WelcomePage extends StatelessWidget {
             ),
             Padding(
                 padding:
-                new EdgeInsets.symmetric(vertical: 24.0, horizontal: 48.0),
+                    new EdgeInsets.symmetric(vertical: 24.0, horizontal: 48.0),
                 child: Text(
                   WELCOME_TITLE,
                   textAlign: TextAlign.center,
@@ -54,12 +55,11 @@ class WelcomePage extends StatelessWidget {
                   onFieldSubmittedCallback: (String text) {
                     Navigator.of(context).push(
                         new MaterialPageRoute(builder: (BuildContext context) {
-                          return new HelperContainer(
-                            innerChild: new WishPage(userName: text),
-                            image: IMAGE_5,
-                          );
-                        })
-                    );
+                      return new HelperContainer(
+                        innerChild: new WishPage(request: HelperRequest(text)),
+                        image: IMAGE_5,
+                      );
+                    }));
                   }),
             )
           ],

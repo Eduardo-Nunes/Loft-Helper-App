@@ -28,17 +28,18 @@ class _HelperContainer extends State<HelperContainer> {
                 children: <Widget>[
                   appLogoImage,
                   Container(
+                    height: 420,
                     alignment: Alignment.center,
-                    margin: new EdgeInsets.only(
-                        left: 48.0, right: 48.0, top: 24.0),
+                    margin:
+                        new EdgeInsets.only(left: 48.0, right: 48.0, top: 24.0),
                     child: widget.innerChild,
                   ),
                   Container(
-                    alignment: Alignment.bottomCenter,
+                      alignment: Alignment.bottomCenter,
                       child: Image.asset(
-                    widget.image,
-                    fit: BoxFit.fitWidth,
-                  ))
+                        widget.image,
+                        fit: BoxFit.fitWidth,
+                      ))
                 ],
               ),
             ),

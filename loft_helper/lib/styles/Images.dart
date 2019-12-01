@@ -5,6 +5,8 @@ const APP_LOGO_PATH = 'assets/images/logo_lofthelper.png';
 const SPLASH_LOGO_PATH = 'assets/images/splash_lofthelper.png';
 const IMAGE_4 = "assets/images/image_4.png";
 const IMAGE_5 = "assets/images/image_5.png";
+const IMAGE_7 = "assets/images/image_7.png";
+const IMAGE_8 = "assets/images/image_8.png";
 const images = [IMAGE_4, IMAGE_5];
 
 final appLogoImage = Image.asset(

@@ -14,3 +14,10 @@ final messageStyle = TextStyle(
   fontFamily: 'Roboto',
   fontWeight: FontWeight.normal,
 );
+
+final subTitleStyle = TextStyle(
+  color: mediumGrey,
+  fontSize: 16,
+  fontFamily: 'Roboto',
+  fontWeight: FontWeight.normal,
+);

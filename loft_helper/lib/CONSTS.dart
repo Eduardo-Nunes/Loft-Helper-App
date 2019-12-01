@@ -4,3 +4,7 @@ const WELCOME_MESSAGE =
 const USER_NAME_HINT = "Digite seu nome...";
 const USER_NAME_SUBMIT_LABEL = "COMEÇAR";
 const PREENCHA_ESSE_CAMPO = "Preencha esse campo";
+const WISH_MESSAGE = "O que você pretende fazer?";
+const SHOP = "Comprar";
+const SELL = "Vender";
+const TRADE = "Trocar";

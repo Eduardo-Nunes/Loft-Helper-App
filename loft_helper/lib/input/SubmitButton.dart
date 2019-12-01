@@ -18,7 +18,7 @@ class _SubmitButton extends State<SubmitButton> {
       padding: new EdgeInsets.all(16.0),
       color: primaryColor,
       child: Text(
-        widget.submitLabel,
+        widget.submitLabel.toUpperCase(),
         style: TextStyle(fontSize: 12, color: white),
       ),
       onPressed: () {

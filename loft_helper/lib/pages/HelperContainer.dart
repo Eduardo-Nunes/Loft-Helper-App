@@ -25,16 +25,12 @@ class _HelperContainer extends State<HelperContainer> {
             child: Padding(
               padding: paddingTop,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   appLogoImage,
                   Container(
                     alignment: Alignment.center,
-                    height: 450,
-                    margin: new EdgeInsets.symmetric(
-                        horizontal: 48.0, vertical: 24.0),
+                    margin: new EdgeInsets.only(
+                        left: 48.0, right: 48.0, top: 24.0),
                     child: widget.innerChild,
                   ),
                   Container(

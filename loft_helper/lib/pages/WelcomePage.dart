@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:loft_helper/input/SubmitText.dart';
 import 'package:loft_helper/pages/HelperContainer.dart';
 import 'package:loft_helper/pages/UserCounterPage.dart';
+import 'package:loft_helper/pages/WishPage.dart';
 import 'package:loft_helper/styles/Colors.dart';
 import 'package:loft_helper/styles/Dimens.dart';
 import 'package:loft_helper/styles/Images.dart';
@@ -54,7 +55,7 @@ class WelcomePage extends StatelessWidget {
                     Navigator.of(context).push(
                         new MaterialPageRoute(builder: (BuildContext context) {
                           return new HelperContainer(
-                            innerChild: new UserCounterPage(title: text),
+                            innerChild: new WishPage(userName: text),
                             image: IMAGE_5,
                           );
                         })

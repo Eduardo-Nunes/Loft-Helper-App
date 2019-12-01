@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "762553865794",
+    "firebase_url": "https://loft-helper.firebaseio.com",
+    "project_id": "loft-helper",
+    "storage_bucket": "loft-helper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762553865794:android:8d7139067a1d6083303fdb",
+        "android_client_info": {
+          "package_name": "com.loft.hackthon.time5.loft_helper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762553865794-83datb2ht96rgfk349e9sa9tk9ukrtd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7bme1W2ARUVQnk3w4y5ewsm4Fr4cNSk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762553865794-83datb2ht96rgfk349e9sa9tk9ukrtd5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
